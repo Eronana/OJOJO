@@ -14,7 +14,7 @@ Then,you can use these command:<br>
 <code>HDU 123</code> show prohlem 1230 to 1239 in HDU OJ<br>
 <code>HDU 1234</code> show prohlem 1234 HDU OJ<br>
 <code>HDU keyword</code> show result for search keyword<br>
-you could change <code>HDU</code> to <code>POJ</code>,<code>ZOJ</code> to see poj ans zoj
+you could change <code>HDU</code> to <code>POJ</code> or <code>ZOJ</code> to see poj or zoj
 ##Why named OJOJO
 Maybe you have already guessed<br>
 It has same format of Niconiconi~<br>
