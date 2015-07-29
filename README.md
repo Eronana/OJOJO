@@ -5,7 +5,7 @@ Alfred 2 is a soft in Mac OSX,if you aren't Mac user,please close this page,it i
 OJOJO could goto problem page in some OnlineJudge quickly.<br>
 It is very useful for ACMer<br>
 ##How to use
-Goto release page to download and install it.<br>
+Goto [release page](/Eronana/OJOJO/releases) to download and install it.<br>
 Then,you can use these command:<br>
 <code>OJOJOCLEAR</code> Clear caches<br>
 <code>TC</code> Launch TopCoder Arena<br>
