@@ -1,2 +1,3 @@
 *.pyc
 /cache/*.json
+url.txt

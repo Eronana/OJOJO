@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from oj import *
 class hdu(oj):
 	def __init__(this):
@@ -7,7 +8,7 @@ class hdu(oj):
 		this.URL_SEARCH='http://acm.hdu.edu.cn/search.php?action=listproblem'
 		this.URL_SEARCH_PARAM='content=%s&searchmode=title'
 		this.DIR_CACHE='cache/HDU%d.json'
-		this.ICON='78FEFB33-DA23-42CE-9231-05760BF83F4A.png'
+		this.ICON='3C5AD89D-1AE3-411C-8E66-6BC0036B3EBF.png'
 		this.ENCODE='gbk'
 		this.RE_QUERY=r'p\(.*?\,(\d+)\,.*?,"(.*?)"\,(\d+)\,(\d+)\);'
 		this.RE_SEARCH=r'showproblem\.php\?pid=(\d+)">(.*?)<.*?searchmode=source">(.*?)<.*?status=5\'>(\d+)<.*?\'>(\d+)<'

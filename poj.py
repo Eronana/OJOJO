@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from oj import *
 class poj(oj):
 	def __init__(this):

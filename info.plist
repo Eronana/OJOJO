@@ -6,7 +6,40 @@
 	<string>ojojo</string>
 	<key>connections</key>
 	<dict>
+		<key>01D15B7B-DDA4-4886-A0E9-EFED15EA6AF0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>94E96DFA-87DE-4AAB-AD12-988E8E3C4967</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>09F1D656-F3B0-4C0C-8808-14E775D4AEC7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>94E96DFA-87DE-4AAB-AD12-988E8E3C4967</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>13D691AA-D2EE-47FD-88FF-1653B5A6815C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>94E96DFA-87DE-4AAB-AD12-988E8E3C4967</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>3C5AD89D-1AE3-411C-8E66-6BC0036B3EBF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -39,22 +72,22 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>78FEFB33-DA23-42CE-9231-05760BF83F4A</key>
+		<key>8BEE8050-E392-41FC-8E6B-9E014DFF20BB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>94E96DFA-87DE-4AAB-AD12-988E8E3C4967</string>
+				<string>B87B542D-501E-425A-B80F-12C8453FA3E5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
 		</array>
-		<key>8BEE8050-E392-41FC-8E6B-9E014DFF20BB</key>
+		<key>8E3ED658-BB90-4830-AAB2-DE051F29BB11</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B87B542D-501E-425A-B80F-12C8453FA3E5</string>
+				<string>94E96DFA-87DE-4AAB-AD12-988E8E3C4967</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -162,44 +195,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>keyword</key>
-				<string>cf</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading...</string>
-				<key>script</key>
-				<string>import cf
-cf.query('{query}')</string>
-				<key>subtext</key>
-				<string>Enter problemID</string>
-				<key>title</key>
-				<string>Codeforces</string>
-				<key>type</key>
-				<integer>3</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>13D691AA-D2EE-47FD-88FF-1653B5A6815C</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
@@ -222,7 +217,7 @@ cf.query('{query}')</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
-				<string>hdu</string>
+				<string>cf</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -230,26 +225,27 @@ cf.query('{query}')</string>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>from hdu import *
-query='{query}'
-hdu().query(int(query)) if query.isdigit() else hdu().search(query)</string>
+				<string>import cf
+query="{query}".strip()
+if len(query):
+	cf.query(query)</string>
 				<key>subtext</key>
-				<string>Enter problemID or keyword</string>
+				<string>Enter problemID</string>
 				<key>title</key>
-				<string>HDU OnlineJudge</string>
+				<string>Codeforces</string>
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>78FEFB33-DA23-42CE-9231-05760BF83F4A</string>
+			<string>13D691AA-D2EE-47FD-88FF-1653B5A6815C</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -259,7 +255,47 @@ hdu().query(int(query)) if query.isdigit() else hdu().search(query)</string>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>hdu</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>from hdu import *
+query="{query}".lstrip()
+if len(query):
+	hdu().query(int(query)) if query.isdigit() else hdu().search(query)</string>
+				<key>subtext</key>
+				<string>Enter problemID or keyword</string>
+				<key>title</key>
+				<string>HDU OnlineJudge</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3C5AD89D-1AE3-411C-8E66-6BC0036B3EBF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
 				<key>keyword</key>
 				<string>poj</string>
 				<key>queuedelaycustom</key>
@@ -269,13 +305,14 @@ hdu().query(int(query)) if query.isdigit() else hdu().search(query)</string>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
 				<string>from poj import *
-query='{query}'.strip()
-poj().query(int(query)) if query.isdigit() else poj().search(query)</string>
+query="{query}".strip()
+if len(query):
+	poj().query(int(query)) if query.isdigit() else poj().search(query)</string>
 				<key>subtext</key>
 				<string>Enter problemID or keyword</string>
 				<key>title</key>
@@ -283,7 +320,7 @@ poj().query(int(query)) if query.isdigit() else poj().search(query)</string>
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -308,13 +345,14 @@ poj().query(int(query)) if query.isdigit() else poj().search(query)</string>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
 				<string>from zoj import *
-query='{query}'.strip()
-zoj().query(int(query)) if query.isdigit() else zoj().search(query)</string>
+query="{query}".strip()
+if len(query):
+	zoj().query(int(query)) if query.isdigit() else zoj().search(query)</string>
 				<key>subtext</key>
 				<string>Enter problemID or keyword</string>
 				<key>title</key>
@@ -322,7 +360,7 @@ zoj().query(int(query)) if query.isdigit() else zoj().search(query)</string>
 				<key>type</key>
 				<integer>3</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -331,15 +369,150 @@ zoj().query(int(query)) if query.isdigit() else zoj().search(query)</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>sgu</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading</string>
+				<key>script</key>
+				<string>from sgu import *
+query="{query}".strip()
+if query.isdigit():
+	sgu().query(int(query))</string>
+				<key>subtext</key>
+				<string>Enter problemID or keyword</string>
+				<key>title</key>
+				<string>Saratov State University :: Online Contester</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>09F1D656-F3B0-4C0C-8808-14E775D4AEC7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>ac</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>from acdream import *
+query="{query}".strip()
+if len(query):
+	ac().query(int(query)) if query.isdigit() else ac().search(query)</string>
+				<key>subtext</key>
+				<string>Enter problemID or keyword</string>
+				<key>title</key>
+				<string>ACdream</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>01D15B7B-DDA4-4886-A0E9-EFED15EA6AF0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>spoj</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>from spoj import *
+query="{query}".strip()
+if query.isdigit():
+	spoj().query(int(query))</string>
+				<key>subtext</key>
+				<string>Enter problemID or keyword</string>
+				<key>title</key>
+				<string>Sphere Online Judge</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8E3ED658-BB90-4830-AAB2-DE051F29BB11</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>01D15B7B-DDA4-4886-A0E9-EFED15EA6AF0</key>
+		<dict>
+			<key>ypos</key>
+			<real>780</real>
+		</dict>
+		<key>09F1D656-F3B0-4C0C-8808-14E775D4AEC7</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
+		</dict>
 		<key>13D691AA-D2EE-47FD-88FF-1653B5A6815C</key>
 		<dict>
 			<key>ypos</key>
 			<real>230</real>
+		</dict>
+		<key>3C5AD89D-1AE3-411C-8E66-6BC0036B3EBF</key>
+		<dict>
+			<key>ypos</key>
+			<real>340</real>
 		</dict>
 		<key>3D2A4631-525A-4CE4-88F6-66AEFB4DE0E1</key>
 		<dict>
@@ -351,15 +524,15 @@ zoj().query(int(query)) if query.isdigit() else zoj().search(query)</string>
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
-		<key>78FEFB33-DA23-42CE-9231-05760BF83F4A</key>
-		<dict>
-			<key>ypos</key>
-			<real>340</real>
-		</dict>
 		<key>8BEE8050-E392-41FC-8E6B-9E014DFF20BB</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>8E3ED658-BB90-4830-AAB2-DE051F29BB11</key>
+		<dict>
+			<key>ypos</key>
+			<real>900</real>
 		</dict>
 		<key>94E96DFA-87DE-4AAB-AD12-988E8E3C4967</key>
 		<dict>
@@ -374,7 +547,7 @@ zoj().query(int(query)) if query.isdigit() else zoj().search(query)</string>
 		<key>AC929DE7-F240-4ADE-A7F2-DDFBE4943538</key>
 		<dict>
 			<key>ypos</key>
-			<real>570</real>
+			<real>560</real>
 		</dict>
 		<key>B87B542D-501E-425A-B80F-12C8453FA3E5</key>
 		<dict>
