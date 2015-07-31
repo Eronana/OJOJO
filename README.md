@@ -9,12 +9,29 @@ Goto [release page](https://github.com/Eronana/OJOJO/releases) to download and i
 Then,you can use these command:<br>
 <code>OJOJOCLEAR</code> Clear caches<br>
 <code>TC</code> Launch TopCoder Arena<br>
-<code>CF 123</code> show contest 123 in Codeforces<br>
-<code>CF 456A</code> show problem 456A in Codeforces<br>
-<code>HDU 123</code> show prohlem 1230 to 1239 in HDU OJ<br>
-<code>HDU 1234</code> show prohlem 1234 HDU OJ<br>
-<code>HDU keyword</code> show result for search keyword<br>
-you could change <code>HDU</code> to <code>POJ</code> or <code>ZOJ</code> to see poj or zoj
+<code>OJNAME ProblemID</code> show problem ProblemID in OJNAME<br>
+Example:<br>
+<code>CF 123A</code> show problem 123A in Codeforces<br>
+<code>HDU 4567</code> show problem 4567 in HDU OJ<br>
+Space between OJNAME and ProblemID is optional,example:<br>
+<code>CF123A</code> show problem 123A in Codeforces<br>
+<code>HDU4567</code> show problem 4567 in HDU OJ<br>
+Some OJ provide search,you can use <code>OJNAME keyword</code> to search problem<br>
+Example:<br>
+<code>ZOJ hello</code><br>
+<code>HDU problem</code><br>
+<code>AC brain</code><br>
+You can use these OJNAME now:<br>
+<code>CF</code> Codeforces<br>
+<code>HDU</code> HDU OnlineJudge<br>
+<code>POJ</code> PKU JudgeOnline<br>
+<code>ZOJ</code> Zhejiang University OnlineJudge<br>
+<code>SGU</code> Saratov State University :: Online Contester<br>
+<code>AC</code> ACdream<br>
+<code>SPOJ</code> Sphere Online Judge<br>
+<code>PE</code> Project Euler<br>
+
+If you want to use other OJ,please tell me!
 ##Why named OJOJO
 Maybe you have already guessed<br>
 It has same format of Niconiconi~<br>
